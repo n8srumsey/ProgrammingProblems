@@ -1,3 +1,5 @@
+import sys
+sys.path.append('./..')
 import utils
 
 def process_input(data):
