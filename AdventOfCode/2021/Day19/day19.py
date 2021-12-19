@@ -114,11 +114,10 @@ def part_2(scanners):
 
     answer = 0
 
-    for o0 in offsets:
-        for o1 in offsets:
-            dist = sum(abs(a-b) for a,b in zip(o0, o1))
+    for offset0 in offsets:
+        for offset1 in offsets:
+            dist = sum(abs(a - b) for a, b in zip(offset0, offset1))
             answer = max(answer, dist)
-
     return answer
 
 if __name__ == '__main__':

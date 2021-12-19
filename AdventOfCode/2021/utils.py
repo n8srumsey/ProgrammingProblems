@@ -66,8 +66,7 @@ def readlines_no_strip():
 
 def read_whole_input():
     with open(get_input_filename()) as f:
-        data = f.read.strip()
-    return data
+        return f.read()
 
 
 def read_grid_2darray():
